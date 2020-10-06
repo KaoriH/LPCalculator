@@ -19,6 +19,41 @@ h1 {
 /* background-color: #fff0f5 */
 }
 
+/* .box {
+  max-width: 800px;
+  margin: 50px auto;
+
+} */
+
+.box {
+  max-width: 600px;
+  margin: 50px auto;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+.boxComment {
+  max-width: 450px;
+  margin: 50px auto;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+
+.back {
+  max-width: 800px;
+  margin: 100px auto;
+
+}
+
+.footer {
+  max-width: 800px;
+  margin: 100px auto;
+
+}
+
 /* .footer {
   width: 100%;
   height: 100px;

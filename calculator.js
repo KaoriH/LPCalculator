@@ -23,26 +23,30 @@ app.get("/", function(req, res) {
 
 app.post("/", function(req, res) {
 
+  const name1 = req.body.na1;
+  const name2 = req.body.na2;
+
   let loveScore = Math.random() * 100;
   loveScore = Math.floor(loveScore) + 1;
 
 
   if (loveScore > 70) {
-    comment = "You love each other like lovebirds.";
+    comment = " love each other like lovebirds.";
   }
 
   if (loveScore > 30 && loveScore <= 70) {
-    comment = "You need to make an effort to keep a good relationship.";
+    comment = " need to make an effort to keep a good relationship.";
   }
 
   if (loveScore <= 30) {
-    comment = "You go together like oil and water.";
+    comment = " go together like oil and water.";
   }
+
+
 
   res.render("results", {
     loveResult: loveScore,
-    loveComment: comment
-
+    loveComment: name1 + " and " + name2 + comment
   });
 });
 

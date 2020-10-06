@@ -1,18 +1,24 @@
 <%- include("header") -%>
-<div>
 
-<h1>
-  Your love score is <%= loveResult %> %.
-</h1>
-
+<div class="box">
+  <h1>
+    Your love score is
+    <%= loveResult %>%.
+  </h1>
 </div>
 
-<div>
-
-
-<h2>
-  <%= loveComment %>
-</h2>
-
+<div class="boxComment">
+  <h2>
+    <%= loveComment %>
+  </h2>
 </div>
-<%- include("footer") -%>
+
+<div class="back">
+  <FORM>
+    <INPUT type="button" Value="Back" onClick="history.go(-1);">
+  </FORM>
+</div>
+
+<div class="footer">
+  <%- include("footer") -%>
+</div>
