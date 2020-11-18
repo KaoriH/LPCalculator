@@ -32,21 +32,23 @@ app.post("/", function(req, res) {
 
   if (loveScore > 70) {
     comment = " love each other like lovebirds.";
+    loveImageClass = "lovebirds";
   }
 
   if (loveScore > 30 && loveScore <= 70) {
     comment = " need to make an effort to keep a good relationship.";
+    loveImageClass = "effort";
   }
 
   if (loveScore <= 30) {
     comment = " go together like oil and water.";
+    loveImageClass = "oilwater";
   }
-
-
 
   res.render("results", {
     loveResult: loveScore,
-    loveComment: name1 + " and " + name2 + comment
+    loveComment: name1 + " and " + name2 + comment,
+    loveImage: loveImageClass
   });
 });
 

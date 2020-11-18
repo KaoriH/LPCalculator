@@ -1,9 +1,8 @@
 body {
-  font-family: 'Montserrat', sans-serif;
   text-align: center;
-  color: #40514E;
-  background-color: #99FF66;            /* 背景色 */
-  background-image: url(images/mug.jpg);
+  color: #ffffff;
+  background-color: #C0C0C0;            /* 背景色 */
+  /* background-image: url(images/fortune.jpg); */
   background-size: cover;               /* 全画面 */
   background-attachment: fixed;         /* 固定 */
   background-position: center center;/* 縦横中央 */
@@ -12,41 +11,97 @@ body {
 }
 
 h1 {
-  font-family: "Montserrat-Black";
-  font-size: 4rem;
-
-
-/* background-color: #fff0f5 */
+  font-family: 'Bad Script', cursive;
+  font-size: 6rem;
 }
 
+.home {
+background-image: url(images/fortune.jpg);
+}
+
+.lovebirds {
+background-image: url(images/lovebirds.png);
+}
+
+.effort {
+background-image: url(images/perseverance.jpg);
+}
+
+.oilwater {
+background-image: url(images/oilwater.png);
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+input{
+  font-size: 180%;
+  padding: 5px 10px;
+  border-style: none;
+  border-radius: 3px;
+  outline: none;
+
+}
 /* .box {
   max-width: 800px;
-  margin: 50px auto;
+  height: 50px;
 
 } */
 
-.box {
+/* .box {
   max-width: 600px;
   margin: 50px auto;
-  background: white;
+  /* background: white;
   border-radius: 5px;
   box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
 }
+*/
 
-.boxComment {
+/* .boxComment {
   max-width: 450px;
-  margin: 50px auto;
-  background: white;
+  margin: 10px auto;
+  /* background: white;
   border-radius: 5px;
   box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+} */
+
+button.button2 {
+  background-color: pink;
+  font-size: 180%;
+  padding: 5px 10px;
+  border-style: none;
+  border-radius: 3px;
+  outline: none;
+
+  -moz-box-shadow: 2px 2px 3px 1px #666;
+  -box-shadow: 2px 2px 3px 1px #666;
+  -webkit-box-shadow: 2px 2px 3px 1px #666;
+}
+
+.back {
+  font-size: 1.4rem;
+  padding: 5px 10px;
+  border-style: none;
+  border-radius: 3px;
+  outline: none;
+
+  -moz-box-shadow: 2px 2px 3px 1px #666;
+  -box-shadow: 2px 2px 3px 1px #666;
+  -webkit-box-shadow: 2px 2px 3px 1px #666;
 }
 
 
+
+
+
+
+/*
 .back {
   max-width: 800px;
   margin: 100px auto;
 
-}
+} */
 
 .footer {
   max-width: 800px;
