@@ -2,17 +2,34 @@ body {
   text-align: center;
   color: #ffffff;
   background-color: #C0C0C0;            /* 背景色 */
-  /* background-image: url(images/fortune.jpg); */
+  background-image: url(images/fortune.jpg);
   background-size: cover;               /* 全画面 */
-  background-attachment: fixed;         /* 固定 */
   background-position: center center;/* 縦横中央 */
+  background-attachment: fixed;         /* 固定 */
   width: 100%;
-  height: auto;
+  /* height: auto; */
+  height: 100%;
 }
+
+
 
 h1 {
   font-family: 'Bad Script', cursive;
   font-size: 6rem;
+  margin: 5% auto;
+}
+
+.welcome p {
+  font-size: 2.5rem;
+  width: 60%;
+  margin: 5% auto;
+}
+
+.warning p {
+  font-size: 1.8rem;
+  color: #ff70a6;
+  width: 50%;
+  margin: 5% auto;
 }
 
 .home {
@@ -43,27 +60,30 @@ input{
   outline: none;
 }
 
-
-button.button2 {
-  background-color: pink;
-  font-size: 180%;
-  padding: 5px 10px;
-  border-style: none;
-  border-radius: 3px;
-  outline: none;
-
-  -moz-box-shadow: 2px 2px 3px 1px #666;
-  -box-shadow: 2px 2px 3px 1px #666;
-  -webkit-box-shadow: 2px 2px 3px 1px #666;
+.telling form {
+  display: inline-block;
 }
 
-.back {
-  font-size: 130%;
-  padding: 5px 10px;
-  border-style: none;
+
+.keisan {
+  background: #222;
+  color: #FFF;
+  border: 2px solid silver;
   border-radius: 3px;
-  outline: none;
+  font-size: 1.3rem;
+  padding: 0.4em 1em;
+  transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
 }
+
+
+.keisan:hover {
+  border-color: pink;
+  color: white;
+  box-shadow: 0 0.5em 0.5em -0.4em pink;
+  transform: translateY(-0.05em);
+  cursor: pointer;
+}
+
 
 /* .back {
   font-size: 1.2rem;
@@ -77,24 +97,51 @@ button.button2 {
   -webkit-box-shadow: 2px 2px 3px 1px #666;
 } */
 
-
-.footer-padding {
-	padding-bottom: 80px;
+.back input {
+  background: #222;
+  color: #FFF;
+  border: 2px solid silver;
+  border-radius: 3px;
+  padding: 0.4em 1em;
+  font-size: 1.3em;
+  transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform
 }
 
-
-.footer {
-	position: absolute;
-	text-align: center;
-	bottom: 0;
-	width: 100%;
-	height: 80px;
-	background-color: #222222;
-  /* margin-left: -15px; */
+.back input:hover {
+  border-color: pink;
+  color: white;
+  box-shadow: 0 0.5em 0.5em -0.4em pink;
+  transform: translateY(-0.05em);
+  cursor: pointer;
 }
 
-.footer p {
-	margin-top: 27px;
-	font-size: 25px;
-  color: #fff;
+.wrapper{
+    min-height: 100vh;
+    position: relative;/*←相対位置*/
+    padding-bottom: 120px;/*←footerの高さ*/
+    box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
+}
+
+.footer{
+    width: 100%;
+    background-color: #89c7de;
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.7em 0;
+    position: absolute;/*←絶対位置*/
+    bottom: 0; /*下に固定*/
+    margin-left: -8px;
+    margin-bottom: -8px;
+}
+
+@media (min-width: 768px) {
+  /* form {
+    width: 50%;
+    margin: 50%;
+  } */
+
+  .footer {
+    font-size: 1.5rem;
+  }
 }

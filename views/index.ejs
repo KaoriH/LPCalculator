@@ -1,15 +1,21 @@
 <%- include("header") -%>
 
 <h1>Love Probablity Calculator</h1>
-<form action="/" method="post">
-  <input type="text" name="na1" placeholder="Your Name" autocomplete="off">
-  <input type="text" name="na2" placeholder="Name of your crush" autocomplete="off">
-  <button class="button2" type="submit" name="button">Calculate Love!</button>
-</form>
-
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="index.js" charset="utf-8"></script> -->
-
-<div class="footer">
-  <%- include("footer") -%>
+<div class="welcome">
+  <p>Welcome to my "Love Probablity Calculator". Are you interested in the compatiblity with your loved one? I'll tell it for you...</p>
 </div>
+
+<div class="telling">
+  <form action="/" method="post">
+    <input type="text" name="na1" placeholder="Your Name" autocomplete="off">
+    <input type="text" name="na2" placeholder="Name of your crush" autocomplete="off">
+    <button class="keisan" type="submit" name="button">ASK ME</button>
+  </form>
+</div>
+
+<div class="warning">
+  <p>Remember, a relationship is not always stable. There are good and bad times. It all depends on how you two treat each other even when in trouble. Therefore, compatiblity is just an additional factor for the relationship.</p>
+</div>
+
+
+<%- include("footer") -%>
