@@ -15,7 +15,7 @@ This is a simple app that calculates and displays a compatibility percentage bet
 - Express.js  
 - EJS (Embedded JavaScript Templates)
 
-## How to run or view
+## How to Run or View
 1. Clone or download the repository.
 2. Open `index.html` in your web browser.
 3. Use the + / – buttons to adjust the life points in real time.
