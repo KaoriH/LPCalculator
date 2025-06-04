@@ -1,8 +1,8 @@
 # LP Calculator
 
 ## Overview
-This is a simple Life Points calculator built using HTML, CSS, and JavaScript.  
-Users can increase or decrease the displayed number to simulate score tracking or point adjustments in games or activities.
+This is a simple app that calculates and displays a compatibility percentage between two people. Built using HTML, CSS, and JavaScript.
+
 
 > 🧠 This project was created to practice basic JavaScript DOM manipulation and event handling.  
 > It represents one of my early steps into interactive web development.
