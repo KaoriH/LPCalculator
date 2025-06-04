@@ -10,7 +10,10 @@ Users can increase or decrease the displayed number to simulate score tracking o
 ## Technologies Used
 - HTML5  
 - CSS3  
-- JavaScript (vanilla)
+- JavaScript (vanilla)  
+- Node.js  
+- Express.js  
+- EJS (Embedded JavaScript Templates)
 
 ## How to Use
 1. Clone or download the repository.
